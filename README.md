@@ -21,4 +21,5 @@ If you want to split log files daily then you could use logrotate module for lin
     delaycompress
 }
 ```
-**The above commands provides that access log data will be wrote to daily files in `/var/log/access`**
+> The above commands provides that access log data will be wrote to daily files in **/var/log/access**
+But if you have not **/var/log/access** folder then you should create it with : ``mkdir /var/log/access``
