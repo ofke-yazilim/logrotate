@@ -26,3 +26,6 @@ If you want to split log files daily then you could use logrotate module for lin
 ```html
 logrotate -f /etc/logrotate.d/nginx
 ```
+```html 
+crontab -l | { cat; echo "59 23 * * * logrotate -f /etc/logrotate.d/nginx >> /dev/null 2>&1"; } | crontab -
+```
